@@ -1,0 +1,32 @@
+[
+  {
+    "id": "s1",
+    "name": "GlowUp Skincare",
+    "address": "12A Connaught Place, New Delhi",
+    "latitude": 28.6315,
+    "longitude": 77.2167,
+    "category": "Beauty & Skincare",
+    "services": ["Facewash", "Toner", "Serums"],
+    "rating": 4.7
+  },
+  {
+    "id": "s2",
+    "name": "Brew Culture Cafe",
+    "address": "22 Hauz Khas Village, New Delhi",
+    "latitude": 28.5494,
+    "longitude": 77.1996,
+    "category": "Coffee & Beverages",
+    "services": ["Coffee", "Cold Brew", "Pastries"],
+    "rating": 4.5
+  },
+  {
+    "id": "s3",
+    "name": "FitFuel Nutrition Store",
+    "address": "A-21, Sector 18, Noida",
+    "latitude": 28.5708,
+    "longitude": 77.3210,
+    "category": "Health & Wellness",
+    "services": ["Supplements", "Whey Protein", "Vitamins"],
+    "rating": 4.3
+  }
+]

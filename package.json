@@ -1,0 +1,27 @@
+{
+  "name": "-intelligent-shop-product-recommendation-assistant",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sriramvarun0636/-Intelligent-Shop-Product-Recommendation-Assistant.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sriramvarun0636/-Intelligent-Shop-Product-Recommendation-Assistant/issues"
+  },
+  "homepage": "https://github.com/sriramvarun0636/-Intelligent-Shop-Product-Recommendation-Assistant#readme",
+  "description": "",
+  "dependencies": {
+    "@google/generative-ai": "^0.24.1",
+    "dotenv": "^17.1.0",
+    "node-fetch": "^3.3.2",
+    "openai": "^5.8.3",
+    "readline-sync": "^1.4.10"
+  }
+}

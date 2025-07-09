@@ -1,0 +1,29 @@
+[
+  {
+    "id": "p1",
+    "name": "Aloe Vera Facewash",
+    "category": "Skincare",
+    "price": 499,
+    "shop_id": "s1",
+    "benefits": ["Reduces oil", "Hydrates skin", "Natural glow"],
+    "upsell": ["Green Tea Toner", "Vitamin C Serum"]
+  },
+  {
+    "id": "p2",
+    "name": "Classic Cold Brew",
+    "category": "Beverages",
+    "price": 199,
+    "shop_id": "s2",
+    "benefits": ["Energizing", "Low sugar"],
+    "upsell": ["Blueberry Muffin", "Oat Milk Upgrade"]
+  },
+  {
+    "id": "p3",
+    "name": "Whey Protein Isolate",
+    "category": "Fitness",
+    "price": 1299,
+    "shop_id": "s3",
+    "benefits": ["Builds muscle", "Fast recovery"],
+    "upsell": ["Shaker Bottle", "Multivitamins Combo"]
+  }
+]
