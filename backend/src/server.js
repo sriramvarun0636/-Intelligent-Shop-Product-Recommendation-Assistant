@@ -16,7 +16,7 @@ const PORT = process.env.PORT || 6000;
 // List allowed origins for CORS (update the deployed frontend URL accordingly)
 const allowedOrigins = [
   'http://localhost:3000',                 // Local dev frontend
-  'https://intelligent-shop-product-recommendation-tusl.onrender.com/' // <-- Replace with your deployed frontend URL
+  'https://intelligent-shop-product-recommendation-tusl.onrender.com' // <-- Replace with your deployed frontend URL
 ];
 
 const corsOptions = {
