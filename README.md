@@ -23,6 +23,5 @@
 
 ---
 
-Feel free to ask if you want it snappier or more detailed!
 
 Deployed it throught render:https://intelligent-shop-product-recommendation-tusl.onrender.com/
