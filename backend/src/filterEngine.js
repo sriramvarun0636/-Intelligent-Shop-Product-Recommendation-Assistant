@@ -2,8 +2,8 @@
 
 const fs = require("fs");
 
-const shops = JSON.parse(fs.readFileSync("./data/shops.json", "utf-8"));
-const products = JSON.parse(fs.readFileSync("./data/products.json", "utf-8"));
+const shops = JSON.parse(fs.readFileSync("../data/shops.json", "utf-8"));
+const products = JSON.parse(fs.readFileSync("../data/products.json", "utf-8"));
 
 function extractKeywords(query) {
   const stopwords = ["find", "good", "near", "place", "shop", "store", "in", "the", "a", "to", "of", "for", "me"];

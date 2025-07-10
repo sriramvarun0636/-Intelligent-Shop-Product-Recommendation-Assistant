@@ -1,7 +1,7 @@
 import dotenv from 'dotenv';
+import path from 'path';
 import { GoogleGenerativeAI } from '@google/generative-ai';
-
-dotenv.config();
+dotenv.config({ path: path.resolve(process.cwd(), '../../.env') });
 
 const API_KEY = process.env.GEMINI_API_KEY;
 

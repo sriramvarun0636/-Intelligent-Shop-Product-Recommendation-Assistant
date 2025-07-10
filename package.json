@@ -3,8 +3,11 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "start": "react-scripts start",
+  "build": "react-scripts build",
+  "test": "react-scripts test",
+  "eject": "react-scripts eject"
+},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/sriramvarun0636/-Intelligent-Shop-Product-Recommendation-Assistant.git"
@@ -16,12 +19,18 @@
     "url": "https://github.com/sriramvarun0636/-Intelligent-Shop-Product-Recommendation-Assistant/issues"
   },
   "homepage": "https://github.com/sriramvarun0636/-Intelligent-Shop-Product-Recommendation-Assistant#readme",
-  "description": "",
   "dependencies": {
     "@google/generative-ai": "^0.24.1",
-    "dotenv": "^17.1.0",
+    "body-parser": "^2.2.0",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.0",
+    "express": "^5.1.0",
     "node-fetch": "^3.3.2",
     "openai": "^5.8.3",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-scripts": "^5.0.1",
     "readline-sync": "^1.4.10"
-  }
+  },
+  "description": ""
 }
