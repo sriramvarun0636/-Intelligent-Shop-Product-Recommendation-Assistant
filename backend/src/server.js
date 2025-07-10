@@ -13,11 +13,24 @@ const { getLLMResponse } = require('./llmClient');
 const app = express();
 const PORT = process.env.PORT || 6000;
 
-// CORS Configuration - allow requests from your frontend
+// List allowed origins for CORS (update the deployed frontend URL accordingly)
+const allowedOrigins = [
+  'http://localhost:3000',                 // Local dev frontend
+  'https://intelligent-shop-product-recommendation-tusl.onrender.com/' // <-- Replace with your deployed frontend URL
+];
+
 const corsOptions = {
-  origin: 'http://localhost:3000', // frontend URL
+  origin: function (origin, callback) {
+    // Allow requests with no origin (like curl or Postman)
+    if (!origin) return callback(null, true);
+    if (allowedOrigins.indexOf(origin) !== -1) {
+      callback(null, true);
+    } else {
+      callback(new Error(`CORS policy: Origin ${origin} not allowed`));
+    }
+  },
   methods: ['GET', 'POST', 'OPTIONS'],
-  // credentials: true, // enable if you use cookies/auth headers
+  optionsSuccessStatus: 200,
 };
 
 app.use(cors(corsOptions));
@@ -53,13 +66,12 @@ app.post('/api/recommend', async (req, res) => {
   }
 });
 
-// Optional: basic error logging middleware (to catch unhandled errors)
+// Basic error handling middleware
 app.use((err, req, res, next) => {
-  console.error('Unhandled error:', err);
+  console.error('Unhandled error:', err.message || err);
   res.status(500).json({ error: 'Something went wrong.' });
 });
 
-// Start server
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
