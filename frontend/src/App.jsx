@@ -19,7 +19,7 @@ export default function App() {
     setRecommendation('');
 
     try {
-      const response = await fetch('/api/recommend', {
+      const response = await fetch('https://intelligent-shop-product-recommendation.onrender.com/api/recommend', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ query }),
