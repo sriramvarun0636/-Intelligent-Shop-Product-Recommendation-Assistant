@@ -15,7 +15,7 @@ const PORT = process.env.PORT || 6000;
 
 const allowedOrigins = [
   'http://localhost:3000',                 // Local dev frontend
-  'https://intelligent-shop-product-recommendation-tusl.onrender.com'
+  'https://intelligent-shop-product-recommendation-tusl.onrender.com'];
 
 const corsOptions = {
   origin: function (origin, callback) {
