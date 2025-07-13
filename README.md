@@ -1,4 +1,4 @@
-# 🛍️ Intelligent Shop & Product Recommender
+# 🛍️ Recommendo AI
 
 ## 🚀 How It Works
 
